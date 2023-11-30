@@ -1,0 +1,285 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+#hero{
+    background-color: #1C1E53;
+}
+
+.hero-right img{
+    width: 100%;
+}
+
+.hero-row{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.hero-left h1{
+    font-size: 40px;
+    width: 400px;
+}
+
+.hero-left p{
+    width: 400px;
+}
+
+.hero-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.btn-1{
+    display: inline-flex;
+    padding: 13px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 41px;
+    background: #FCD980;
+    color: #1B1C2B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    background-color: transparent;
+    color: #FCD980;
+}
+
+.btn-2{
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-2:hover{
+    color: #FCD980;
+}
+
+#project{
+    padding-top: 50px;
+}
+
+.project-1,
+.project-2,
+.project-3{
+    width: 100%;
+}
+
+.project-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-left {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-hover{
+    padding: 10px;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: -100%;
+    transition: 0.7s;
+    padding-bottom: 5px;
+    background-color: #1C1E53;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-hover h3{
+    padding-top: 60px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.project-hover p{
+    color: white;
+    font-size: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.project-hover a{
+    color: #FCD980;
+}
+
+.project-left:hover .project-hover{
+    left: 0;
+}
+
+.project-hover-1 {
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -200%;
+    transition: 0.7s;
+    background-color: #1C1E53;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-right-1{
+    position: relative;
+    overflow: hidden;
+}
+
+.project-right:hover .project-hover-1 {
+    right: 0;
+}
+
+.project-hover-1 h3 {
+    padding-top: 60px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.project-hover-1 a {
+    color: #FCD980;
+}
+
+.project-hover-2 {
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -200%;
+    transition: 0.7s;
+    background-color: #1C1E53;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-right-2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-right:hover .project-hover-2 {
+    right: 0;
+}
+
+.project-hover-2 h3 {
+    padding-top: 60px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.project-hover-2 a {
+    color: #FCD980;
+}
+
+#features{
+    padding-top: 70px;
+    background-color: #F4F6FC;
+}
+
+.features-top{
+    text-align: center;
+}
+
+.features-row{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.features-card{
+    width: 350px;
+    height: 260px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.features-card i{
+    font-size: 25px;
+    color: #2405F2;
+    margin-bottom: 25px;
+}
+
+.features-card h1{
+    font-size: 25px;
+}
+
+.features-card p{
+    font-size: 15px;
+}
+
+@media (min-width: 700px){
+    .hero-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero-btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .project-all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .project-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .project-right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .features-row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1100px){
+    .features-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,156 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#hero{
+    padding-top: 50px;
+}
+
+.hero-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-left h3{
+    font-size: 15px;
+    text-align: center;
+}
+
+.hero-left h2{
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero-left p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.hero-right img{
+    width: 100%;
+}
+
+#info{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.info{
+    background-color: #F4F5F5;
+    padding: 10px;
+}
+
+.info-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-bottom{
+    padding-top: 20px;
+}
+
+.info-bottom img{
+    width: 100%;
+}
+
+#member{
+    padding-top: 40px;
+    background: #F4F6FC;
+    text-align: center;
+}
+
+.member-logo{
+    position: relative;
+    overflow: hidden;
+}
+
+.member-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.member-card{
+    width: 260px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+}
+
+.member-card h1{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.member-hover{
+    background: linear-gradient(358deg, #5239FA 17.97%, rgba(255, 255, 255, 0.00) 79.2%);
+    position: absolute;
+    bottom: -100%;
+    left: 16px;
+    padding: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    transition: 0.5s;
+}  
+
+.member-hover i{
+    font-size: 20px;
+    color: white;
+}
+
+.member-logo:hover .member-hover{
+    bottom: 2px;
+}
+
+.member-card p{
+    margin-top: -10px;
+}
+
+@media (min-width: 700px){
+    .hero-all{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 300px;
+    }
+    .hero-left h3,
+    .hero-left h2, 
+    .hero-left p{
+        text-align: start;
+        width: 400px;
+    }
+    .info-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .member-row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media (min-width: 1000px){
+    .member-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+}
