@@ -1,5 +1,49 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    background: #1C1E53 !important;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.navbar {
+    background-color: #1C1E53 !important;
+}
+
+.navbar-brand img {
+    height: 1.5rem;
+}
+
+.nav-item a:hover {
+    color: var(--White);
+}
+
+.home {
+    padding: 128px 0;
+    color: var(--White);
+    background: #1C1E53;
+}
+
+.btn-3 {
+    border-radius: 41px;
+    background: transparent;
+    display: inline-flex;
+    padding: 16px 56px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 #study{
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 .study-top{
@@ -18,6 +62,7 @@
 
 #blog{
     padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 #blog h1{
@@ -29,6 +74,95 @@
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     gap: 20px;
+}
+
+.footer {
+    padding: 95px 0;
+    background-color: #1C1E53 !important;
+}
+
+.logo {
+    width: 160px;
+    height: 32px;
+}
+
+.footer__text {
+    max-width: 399px;
+    margin-top: 24px;
+    color: white;
+    opacity: 0.8;
+    font-family: var(--Poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.footer__text:nth-child(2) {
+    margin-top: 14px;
+}
+
+.form {
+    max-width: 517px;
+    padding: 18px 35px;
+    background: #FCD980;
+}
+
+label,
+input {
+    display: block;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+label {
+    color: rgba(40, 41, 56, 1);
+    font-family: var(--Poppins);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+input::placeholder {
+    color: rgba(40, 41, 56, 1);
+    opacity: .8;
+    font-family: var(--Poppins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.form {
+    display: flex;
+}
+
+.footer__right {
+    display: block;
+    margin-top: 0;
+}
+
+.footer__right h2 {
+    max-width: 333px;
+    margin-top: 0;
+    font-family: var(--Poppins);
+    color: white;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+}
+
+.footer__icon {
+    display: flex;
+    gap: 26px;
+}
+
+.footer__icon i {
+    font-size: 18px;
+    color: white;
 }
 
 @media (min-width: 700px){
